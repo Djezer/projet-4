@@ -1,0 +1,25 @@
+@mixin object-shadow ($color: $shadow) {
+    box-shadow: 0 4px 10px 0 $color;
+}
+
+@mixin gradient ($oriantation: $degree) {
+    background:linear-gradient( $degree, $color-primary, $color-secondary);
+}
+
+/**** cercle ****/
+@mixin circle {
+    border-radius: 50%;
+}
+@mixin table_responsive {
+    @media all and (min-width: map-get($breakpoints, table)) {
+        @content;
+    }
+}
+
+@mixin desktop_responsive {
+    @media all and (min-width: map-get($breakpoints, desktop)) {
+        @content
+    }
+}
+
+

@@ -1,0 +1,74 @@
+.footer {
+    width: 100%;
+    padding: 22px 25px;
+    background-color: darken($white, 75%);
+    color: $white;
+
+    @include table_responsive {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        height: 114px;
+        gap: 16px;
+    }
+
+    & p {
+        margin: 5px 0;
+    }
+
+    &_logo {
+        margin: 0 0 16px 0;
+        font-size: 18px;
+
+        @include desktop_responsive {
+            width: 137px;
+            margin: 0;
+        }
+        @include table_responsive {
+            width: 137px;
+            margin: 0;
+        }
+    }
+
+    &_bloc {
+        display: flex;
+        flex-direction: column;
+
+        @include table_responsive {
+            flex-direction: row;
+            align-items: center;
+            gap: 7px;
+        }
+    }
+
+    &_nav {
+        display: flex;
+        align-items: center;
+        font-weight: map-get($font-weight, medium);
+        gap: 7px;
+
+        @include table_responsive {
+            width: 190px;
+        }
+
+        &-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 16px;
+            height: 13px;
+            font-size: 13px;
+        }
+
+        &-info {
+
+            @include table_responsive {
+               & p {
+                   width: 130px;
+                   height: 20px;
+               }
+           }
+       }
+    }
+}

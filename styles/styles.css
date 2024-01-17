@@ -1,0 +1,613 @@
+@charset "UTF-8";
+/**** Responsive ****/
+/**** width ****/
+/**** cercle ****/
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap);
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.second-title {
+  font-family: "Shrikhand", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/**** le title d'en tête ****/
+.hero_btngradient {
+  width: 218px;
+  height: 50px;
+  color: white;
+  font-size: 16px;
+  background: linear-gradient(357deg, #9356DC, #FF79DA);
+  border-radius: 25px;
+  border: none;
+  font-weight: 500;
+  box-shadow: 0 4px 10px 0 #d5d5d5;
+  cursor: pointer;
+  margin: auto;
+  transition: opacity 300ms ease-in-out;
+}
+.hero_btngradient:hover {
+  opacity: 0.88;
+  box-shadow: 0 4px 10px 0 #afafaf;
+}
+.hero_btngradient-long {
+  width: 50%;
+  min-width: 150px;
+  max-width: 250px;
+}
+
+.button_like {
+  width: 28px;
+  z-index: 0;
+  position: relative;
+  font-family: "Font Awesome 5 Free";
+  font-size: 25px;
+  padding: 0;
+  border: transparent 0px solid;
+  background-color: transparent;
+  -webkit-text-stroke: 1px white;
+  cursor: pointer;
+}
+.button_like i.fa-solid.fa-heart {
+  display: none;
+  background: linear-gradient(357deg, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.button_like:hover i.far {
+  display: none;
+}
+.button_like:hover i.fa-solid {
+  display: block;
+}
+
+.header {
+  padding: 2%;
+}
+.header_logo {
+  margin: 0;
+  text-align: center;
+  font-size: 27px;
+  font-family: "Shrikhand", cursive;
+}
+.header_withorrow {
+  position: relative;
+}
+.header_goback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 5%;
+  width: 20px;
+  height: 20px;
+  top: 35%;
+  font-size: 20px;
+}
+@media all and (min-width: 1024px) {
+  .header_goback {
+    font-size: 32px;
+  }
+}
+
+.footer {
+  width: 100%;
+  padding: 22px 25px;
+  background-color: #404040;
+  color: white;
+}
+@media all and (min-width: 768px) {
+  .footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    height: 114px;
+    gap: 16px;
+  }
+}
+.footer p {
+  margin: 5px 0;
+}
+.footer_logo {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+}
+@media all and (min-width: 1024px) {
+  .footer_logo {
+    width: 137px;
+    margin: 0;
+  }
+}
+@media all and (min-width: 768px) {
+  .footer_logo {
+    width: 137px;
+    margin: 0;
+  }
+}
+.footer_bloc {
+  display: flex;
+  flex-direction: column;
+}
+@media all and (min-width: 768px) {
+  .footer_bloc {
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+  }
+}
+.footer_nav {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  gap: 7px;
+}
+@media all and (min-width: 768px) {
+  .footer_nav {
+    width: 190px;
+  }
+}
+.footer_nav-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 13px;
+  font-size: 13px;
+}
+@media all and (min-width: 768px) {
+  .footer_nav-info p {
+    width: 130px;
+    height: 20px;
+  }
+}
+
+.info_location {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebebeb;
+  box-shadow: inset 0 10px 8px -5px #d5d5d5;
+  gap: 17px;
+}
+
+.info_icon {
+  display: flex;
+  align-items: center;
+}
+
+.info_form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 109px;
+}
+.info_form .info_city {
+  border: transparent;
+  background-color: grey;
+}
+.info_form .placeholder {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #353535;
+  pointer-events: none;
+}
+.info_form .info_city:focus + .placeholder {
+  display: none;
+}
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 20px 0;
+  background-color: whitesmoke;
+  text-align: center;
+}
+.Main_title {
+  width: 70%;
+  margin: 20px 0;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 700;
+}
+.Main p {
+  width: 85%;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.functioning {
+  width: 90%;
+  margin: auto;
+  padding: 50px 0;
+}
+.functioning_title {
+  margin: 10px 0;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 700;
+}
+.functioning_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 95%;
+  padding-bottom: 10px;
+  margin: auto;
+}
+@media all and (min-width: 1024px) {
+  .functioning_list {
+    width: 98%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.functioning_step {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  margin: 15px 0;
+  border-radius: 20px;
+  border: none;
+  gap: 4%;
+  background-color: #f6f6f6;
+  box-shadow: 0 4px 10px 0 #d5d5d5;
+}
+@media all and (min-width: 1024px) {
+  .functioning_step {
+    width: 30%;
+  }
+}
+.functioning_step:hover {
+  background-color: #f2eafb;
+  box-shadow: 0 4px 10px 0 #bcbcbc;
+}
+.functioning_step:hover > .functioning_step--icon {
+  color: #9356DC;
+}
+.functioning_step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  left: -10px;
+  bottom: -5px;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  color: white;
+  background-color: #9356DC;
+  padding: 1%;
+}
+.functioning_step-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 25px;
+  color: #7E7E7E;
+}
+.functioning_step-subtitle {
+  width: 211px;
+  height: 15px;
+  font-weight: 600;
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px 0 66px 0;
+  background-color: #F6F6F6;
+}
+.restaurant_title {
+  width: 90%;
+  margin: 20px auto;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 700;
+}
+.restaurant_bloc {
+  width: 90%;
+  margin: auto;
+}
+@media all and (min-width: 768px) {
+  .restaurant_bloc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.restaurant_cards {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 250px;
+  margin: auto;
+  margin-bottom: 18px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 4px 10px 0 #d5d5d5;
+}
+@media all and (min-width: 768px) {
+  .restaurant_cards {
+    width: 48%;
+    margin: 0;
+    margin-bottom: 4%;
+  }
+}
+.restaurant_cards:hover {
+  box-shadow: 0 4px 10px 0 #bcbcbc;
+}
+.restaurant_cards-img {
+  position: relative;
+  overflow: hidden;
+  height: 175px;
+  border-radius: 15px 15px 0 0;
+}
+.restaurant_cards-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.restaurant_cards-img-markerinfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  width: 80px;
+  height: 30px;
+  border-radius: 2px;
+  background-color: #99E2D0;
+  color: #278870;
+  font-weight: 500;
+}
+.restaurant_cards-info {
+  display: flex;
+  align-items: flex-start;
+  height: auto;
+  min-height: 75px;
+  padding: 15px;
+}
+.restaurant_cards-info-text {
+  width: 90%;
+}
+.restaurant_cards-info h4, .restaurant_cards-info p {
+  margin: 0;
+}
+.restaurant_cards-info h4 {
+  width: 267px;
+  height: 20px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.restaurant_cards-info p {
+  height: 24px;
+  font-weight: 300;
+  font-size: 17px;
+}
+.restaurant_cards-like {
+  position: absolute;
+  top: 76%;
+  right: 7%;
+  font-size: 25px;
+}
+
+.page_restaurant-img {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+@media all and (min-width: 1024px) {
+  .page_restaurant-img {
+    height: 400px;
+  }
+}
+.page_restaurant-img img {
+  width: 100%;
+  height: 107%;
+  object-fit: cover;
+}
+
+.slight {
+  position: relative;
+  background-color: #f0f0f0;
+  border-radius: 25px 25px 0px 0px;
+  padding: 2% 5% 5% 5%;
+  z-index: 0;
+}
+@media all and (min-width: 1024px) {
+  .slight {
+    max-width: 1024px;
+    margin: auto;
+  }
+}
+.slight_heading {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+@media all and (min-width: 768px) {
+  .slight_heading {
+    width: 400px;
+    height: 41px;
+    justify-content: center;
+  }
+}
+@media all and (min-width: 1024px) {
+  .slight_heading {
+    width: 400px;
+    height: 41px;
+    justify-content: center;
+  }
+}
+.slight_heading h2 {
+  width: 87%;
+  font-size: 27px;
+  font-family: "Shrikhand", cursive;
+}
+@media all and (min-width: 1024px) {
+  .slight_heading h2 {
+    display: flex;
+    font-size: 40px;
+    width: 95%;
+  }
+}
+@media all and (min-width: 768px) {
+  .slight_heading h2 {
+    display: flex;
+    font-size: 35px;
+    width: 95%;
+  }
+}
+@media all and (min-width: 1024px) {
+  .slight_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+.slight_orderbtn {
+  display: flex;
+  justify-content: center;
+}
+
+.race-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media all and (min-width: 768px) {
+  .race-list {
+    width: 100%;
+  }
+}
+.race-list_heading {
+  position: relative;
+  margin: 4% 0% 2% 0%;
+  padding: 10px 0px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+@media all and (min-width: 1024px) {
+  .race-list_heading {
+    font-size: 22px;
+  }
+}
+.race-list_heading::after {
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  content: "";
+  width: 40px;
+  height: 4px;
+  background-color: #99E2D0;
+}
+
+.race-cards {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0px;
+  padding: 0;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px 0 #d5d5d5;
+  overflow: hidden;
+  cursor: pointer;
+}
+.race-cards:hover > .race-cards_checkout {
+  margin-right: 0px;
+}
+.race-cards:hover > .race-cards_checkout::after {
+  transform: rotate(360deg);
+}
+.race-cards_info {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  width: 100%;
+  margin: 2%;
+  gap: 2%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.race-cards_description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  padding: 5px;
+}
+.race-cards_description h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.race-cards_description p {
+  margin: 0;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.race-cards_price {
+  display: flex;
+  align-items: flex-end;
+  width: 15%;
+  padding: 5px;
+}
+.race-cards_price p {
+  margin: 0;
+  font-weight: 500;
+}
+.race-cards_checkout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 20%;
+  margin-right: -20%;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #99E2D0;
+  transition: margin-right 800ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
+}
+.race-cards_checkout::after {
+  display: inline-block;
+  margin: auto;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 25px;
+  content: "\f058";
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */

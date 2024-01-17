@@ -1,0 +1,15 @@
+@import './utils/_variables';
+@import './utils/mixins';
+
+
+@import './base/normilizer';
+@import './base/fonts';
+
+@import './components/index.scss';
+
+
+
+@import './layout/index.scss';
+
+
+@import "./pages/index.scss";

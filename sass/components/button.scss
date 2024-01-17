@@ -1,0 +1,62 @@
+@use "sass:map";
+
+.hero_btngradient{
+    width: 218px;
+    height: 50px;
+    color: $white;
+    font-size: 16px;
+    @include gradient;
+    border-radius: 25px;
+    border: none;
+    font-weight: map-get($font-weight, medium );
+    @include object-shadow;
+    cursor: pointer;
+    margin: auto;
+    transition: opacity 300ms ease-in-out;
+
+    &:hover {
+    opacity: 0.88;
+    @include object-shadow(darken($shadow, 15%));
+}
+
+ &-long {
+    width: 50%;
+    min-width: 150px;
+    max-width: 250px;
+}
+}
+
+
+
+.button_like {
+    width: 28px;
+    z-index: 0;
+    position: relative;
+    font-family: "Font Awesome 5 Free";
+    font-size: 25px;
+    padding: 0;
+    border: transparent 0px solid;
+    background-color: transparent;
+    -webkit-text-stroke: 1px white;
+    cursor: pointer;
+
+    & i.fa-solid.fa-heart {
+        display: none;
+        @include gradient;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+    }
+
+    &:hover {
+
+        i.far {
+            display: none;
+        }
+
+        i.fa-solid {
+             display: block;
+        }
+    }
+
+}
