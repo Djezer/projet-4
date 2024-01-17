@@ -174,6 +174,34 @@ a {
   }
 }
 
+.loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  animation: loader 3s;
+}
+
+.loader .spinner {
+  color: blue;
+  font-size: 22px;
+}
+
+@keyframes loader {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
+}
 .info_location {
   display: flex;
   height: 50px;
