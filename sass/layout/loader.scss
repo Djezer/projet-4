@@ -4,19 +4,21 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: white;
+    @include gradient;
     z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
     visibility: hidden;
-    animation: loader 3s;
-}
+  animation: loader $animation-duration;
+  }
 
-.loader .spinner {
-    color: blue;
-    font-size: 22px;
-}
+  .loader .spinner {
+    height: $loader-size;
+    width: $loader-size;
+    border-radius: 50%;
+    box-shadow: 0 0 0 15px white;
+  }
 
 @keyframes loader {
     from {
@@ -26,3 +28,4 @@
         visibility: hidden;
     }
 }
+
