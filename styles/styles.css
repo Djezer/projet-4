@@ -187,16 +187,23 @@ a {
   justify-content: center;
   align-items: center;
   visibility: hidden;
-  animation: loader 3s;
+  animation: loader 1.5s;
 }
 
 .loader .spinner {
-  height: 200px;
-  width: 200px;
+  height: 110px;
+  width: 110px;
+  border: 6px solid;
+  border-color: white transparent white transparent;
   border-radius: 50%;
-  box-shadow: 0 0 0 15px white;
+  animation: spin 1.3s linear infinite;
 }
 
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 @keyframes loader {
   from {
     visibility: visible;

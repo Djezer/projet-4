@@ -16,10 +16,19 @@
   .loader .spinner {
     height: $loader-size;
     width: $loader-size;
+    border: 6px solid;
+    border-color: white transparent white transparent;
     border-radius: 50%;
-    box-shadow: 0 0 0 15px white;
+    animation: spin 1.3s linear infinite;
   }
 
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
 @keyframes loader {
     from {
         visibility: visible;
